@@ -1,0 +1,71 @@
+<div class="banner">
+  <div class="content">
+    <div class="slider"
+    [ngStyle]="{'background-image': 'url(' + images[currentSlide].url + ')',
+    opacity: hidden ? 0 : 1,
+    transition: 'opacity ' + animationSpeed + 'ms ease-in-out'}">
+    <img [src]="images[currentSlide].url" [alt]="images[currentSlide].alt">
+    <div class="controls">
+      <button (click)="previous()"> < </button>
+      <button (click)="next()"> > </button>
+    </div>
+  </div>
+    @if (indicatorsVisible) {
+      <div id="indicators">
+        @for(image of images; track $index; ){
+        <div
+          (click)="jumpToSlide($index)"
+          class="indicator"
+          [ngClass]="{ active: $index == currentSlide }"
+        ></div>
+        }
+      </div>
+      }
+
+    <div class="hardbanner1">
+      <a href="" class="" id="">
+        <img
+          src="https://cf.shopee.vn/file/vn-11134258-7r98o-lxs07iinmnyzb6_xhdpi"
+          alt="hardbanner1"
+        />
+      </a>
+    </div>
+    <div class="hardbanner2">
+      <a href="" class="" id=""
+        ><img
+          src="https://cf.shopee.vn/file/vn-11134258-7r98o-lxs0apejz5qx89_xhdpi"
+          alt="hardbanner2"
+      /></a>
+    </div>
+    <div class="voucher-banner">
+      <a href="#"
+        ><img src="../../assets/Logo-Shopee.png" alt="vc1" />
+        <span>Voucher</span></a
+      >
+      <a href="#"
+        ><img src="https://static.ybox.vn/2024/4/1/1711968723800-1711941903954-SPX_Orange-Logo.jpg" alt="" />
+        <span>Voucher</span></a
+      >
+      <a href="#"
+        ><img src="https://static.ybox.vn/2024/4/1/1711968723800-1711941903954-SPX_Orange-Logo.jpg" alt="" />
+        <span>Voucher</span></a
+      >
+      <a href="#"
+        ><img src="https://static.ybox.vn/2024/4/1/1711968723800-1711941903954-SPX_Orange-Logo.jpg" alt="" />
+        <span>Voucher</span></a
+      >
+      <a href="#"
+        ><img src="https://static.ybox.vn/2024/4/1/1711968723800-1711941903954-SPX_Orange-Logo.jpg" alt="" />
+        <span>Voucher</span></a
+      >
+      <a href="#"
+        ><img src="https://static.ybox.vn/2024/4/1/1711968723800-1711941903954-SPX_Orange-Logo.jpg" alt="" />
+        <span>Voucher</span></a
+      >
+      <a href="#"
+        ><img src="https://static.ybox.vn/2024/4/1/1711968723800-1711941903954-SPX_Orange-Logo.jpg" alt="" />
+        <span>Voucher</span></a
+      >
+    </div>
+  </div>
+</div>

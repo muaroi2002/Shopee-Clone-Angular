@@ -1,0 +1,121 @@
+.flashSale {
+  margin: 10px 18%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.header{
+  display: flex;
+
+}
+.header img {
+  width: 130px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.timer{
+ align-content: center;
+ margin-top: 10px;
+ margin-left: 10px;
+ color: #ee4d2d;
+ font-size: 16px;
+}
+
+.product-slider {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  /* position: relative;  */
+}
+
+.product-item {
+  display: flex;
+  list-style: none;
+  transition: transform 500ms ease;
+}
+
+.product-item-wrapper {
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 0 0.5px #e3dede;
+  width: 200px;
+  height: 240px;
+}
+
+.product-item-wrapper:hover {
+  box-shadow: 0 0 1px 2px #e4e1e1;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.product-item_cost {
+  align-items: baseline;
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #ee4d2d;
+  font-size: 1.125rem;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.product-item_img img {
+  width: 180px;
+  height: 170px;
+  display: block;
+  margin: 0 auto;
+}
+.product-item_soldOut {
+  position: relative;
+  width: 100%;
+}
+.soldout{
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: .625rem;
+  font-weight: 700;
+  height: inherit;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  text-shadow: 0 0 8px rgba(0, 0, 0, .12);
+  text-transform: uppercase;
+  top: 0;
+  width: inherit;
+  z-index: 3;
+}
+
+.slider-flashSale-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.slider-flashSale-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+.slider-flashSale-button.left {
+  left: 0;
+}
+
+.slider-flashSale-button.right {
+  right: 0;
+}

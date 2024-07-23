@@ -1,0 +1,98 @@
+.banner {
+  background-color: white;
+  height: 350px;
+}
+.content {
+  margin: 10px 18%;
+  display: block;
+}
+.slider {
+  background-color: rgb(23, 110, 187);
+  height: 250px;
+  width: 650px;
+}
+
+.slider img {
+  width: 650px;
+  height: 250px;
+}
+.hardbanner1 {
+  height: 122px;
+  width: 300px;
+  margin-left: 655px;
+  margin-top: -250px;
+}
+.hardbanner1 img {
+  width: 300px;
+  height: 122px;
+  cursor: pointer;
+}
+.hardbanner2 {
+  height: 122px;
+  width: 300px;
+  margin-left: 655px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.hardbanner2 img {
+  width: 300px;
+  height: 122px;
+}
+.slider:hover .controls {
+  opacity: 1;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  margin-top: -145px;
+}
+.controls button{
+  top: 50%;
+  background-color: rgba(152, 143, 143, 0.5);
+  border: none;
+  color: white;
+  padding: 10px 8px 10px 5px;
+  cursor: pointer;
+  opacity: initial;
+}
+.controls button:hover {
+  background-color: rgba(59, 56, 56, 0.8);
+}
+
+.controls button:first-of-type {
+  left: 0;
+  display: inline;
+  position: static;
+}
+
+.controls button:last-of-type {
+  right: 0;
+  display: inline;
+}
+.voucher-banner {
+  display: flex;
+  justify-content: space-around;
+}
+.voucher-banner img {
+  width: 70px;
+  height: 70px;
+}
+.voucher-banner a {
+  display: flex;
+  margin-top: 2px;
+  flex-direction: column;
+  color: rgb(30, 29, 29);
+  font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑,
+    "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC",
+    微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  text-decoration: none;
+  font-size: small;
+}
+.voucher-banner a:hover {
+  margin-top: 7px;
+}
+

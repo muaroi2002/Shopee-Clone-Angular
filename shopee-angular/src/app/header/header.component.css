@@ -1,0 +1,9 @@
+header
+{
+  background-color: #ee4d2d;
+  color: white;
+  position: sticky;
+  top: 0 ;
+  border-radius: 5px 5px 10px 10px;
+  z-index: 2;
+}

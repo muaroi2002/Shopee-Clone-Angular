@@ -1,0 +1,41 @@
+<div class="flashSale">
+  <div class="header">
+    <img src="../../assets/flashsale.png" alt="flashSale" />
+    <div class="timer">{{ hours }}:{{ minutes }}:{{ seconds }}</div>
+  </div>
+  <div class="product-slider">
+    <div
+      class="product-item"
+      [ngStyle]="{ transform: 'translateX(' + currentPosition + 'px)' }"
+    >
+      <div
+        *ngFor="let product of products; let i = index"
+        class="product-item-wrapper"
+      >
+        <a style="text-decoration: none" href="#">
+          <div class="product-item_img">
+            <img [src]="product.url" [alt]="product.alt" />
+          </div>
+          <div class="product-item_cost">
+            <span class="ZnuQ4w zbggAt sTM112">₫</span>
+            <div class="cost">{{ product.cost }}</div>
+          </div>
+          <div class="product-item_sold" style="height: 16px">
+            <div class="soldOut">{{ product.soldOut}}</div>
+            <div
+              class="gsxwEM"
+              style="width: 17%; border-radius: 8px 0px 0px 8px"
+            ></div>
+            <div class="efwV9O" style="border-radius: 8px"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <button (click)="slideLeft()" class="slider-flashSale-button left">
+      &#10094;
+    </button>
+    <button (click)="slideRight()" class="slider-flashSale-button right">
+      &#10095;
+    </button>
+  </div>
+</div>

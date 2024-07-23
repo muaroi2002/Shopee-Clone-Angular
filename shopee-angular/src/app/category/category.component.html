@@ -1,0 +1,22 @@
+<div class="category">
+  <div class="header"><span>Danh mục</span></div>
+  <div class="category-slider">
+    <div class="category-item" [ngStyle]="{'transform': 'translateX(' + currentPosition + 'px)'}">
+      <div
+        *ngFor="let category of categories; let i = index"
+        class="category-item-wrapper"
+      >
+        <a style="text-decoration: none;" href="#">
+          <div class="category-item_img">
+            <img [src]="category.url" [alt]="category.alt" />
+          </div>
+          <div class="category-item_title">
+            <div class="name">{{ category.name }}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <button (click)="slideLeft()" class="slider-button left">&#10094;</button>
+    <button (click)="slideRight()" class="slider-button right">&#10095;</button>
+  </div>
+</div>
