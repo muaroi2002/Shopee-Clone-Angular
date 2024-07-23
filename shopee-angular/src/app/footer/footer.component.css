@@ -1,0 +1,10 @@
+footer{
+  height: 130;
+  padding: 15px;
+  margin-top: 86vh;
+}
+.orange-line{
+  background-color: #ff2600da;
+  height: 8px;
+  width: 100%;
+}
