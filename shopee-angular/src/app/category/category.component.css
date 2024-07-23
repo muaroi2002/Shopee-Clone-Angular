@@ -1,0 +1,110 @@
+.category {
+  margin: 10px 18%;
+  background-color: rgb(255, 255, 255);
+  max-height: 286px;
+  position: sticky;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.header {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑,
+    "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC",
+    微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  border-bottom: 0.5px solid #e3dede;
+  font-size: 14px;
+  color: #9c9696e2;
+  font-weight: normal;
+}
+
+.header span {
+  margin-left: 10px;
+  position: revert;
+  padding: 10px;
+  display: block;
+}
+
+.category-slider {
+  flex-direction: row;
+  align-items: center;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  transition: all 500ms ease 0s;
+  max-height: 250px;
+  width: 1790px;
+}
+
+.category-item-wrapper {
+  display: relative;
+  flex-wrap: w;
+  justify-content: space-between;
+  padding: 0%;
+  cursor: pointer;
+  box-shadow: 0 0 0 0.5px #e3dede;
+
+}
+
+.category-item-wrapper:hover {
+  box-shadow: 0 0 1px 2px #e4e1e1;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0%;
+}
+
+.category-item_title {
+  font-size: 10px;
+  color: #000000;
+  text-align: center;
+  width: 91.5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑,
+    "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC",
+    微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  text-decoration: none;
+}
+
+.category-item_image {
+  flex: auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.category-item_img img {
+  width: 90px;
+  height: 90px;
+}
+
+.slider-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0;
+}
+.slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+.slider-button.left {
+  left: 0;
+}
+
+.slider-button.right {
+  right: 0;
+}
