@@ -1,0 +1,22 @@
+<div class="product">
+  <div class="product-container">
+    <div class="require">
+      <span> GỢI Ý HÔM NAY</span>
+    </div>
+    <div class="product-list">
+      <div class="product-item" *ngFor="let product of products">
+        <div class="product-item__image">
+          <img [src]="product.url" alt="product.name" />
+        </div>
+        <div class="product-item__name">
+          {{ product.name }}
+        </div>
+        <div class="product-item__price">
+          {{ product.cost | currency: 'VND' }}
+        </div>
+        <div class="findMore">
+          Tìm sản phẩm tương tự
+        </div>
+      </div>
+  </div>
+</div>
