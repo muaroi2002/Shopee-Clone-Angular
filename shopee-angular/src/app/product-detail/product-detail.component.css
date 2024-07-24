@@ -1,0 +1,27 @@
+.productDetail{
+  margin: 10px 18%;
+  background-color: rgb(255, 255, 255);
+}
+.product-detail__image img{
+  width: 430px;
+  height: 430px;
+}
+.sub-images {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.sub-image {
+  max-width: 100px;
+  height: auto;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 4px;
+  transition: transform 0.2s;
+}
+
+.sub-image:hover {
+  transform: scale(1.1);
+}

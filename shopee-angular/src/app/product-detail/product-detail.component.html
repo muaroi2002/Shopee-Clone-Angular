@@ -1,0 +1,24 @@
+<div class="productDetail">
+  <div *ngIf="product">
+    <h2 class="product-detail__name">{{ product.name }}</h2>
+    <div class="product-detail__image">
+      <img [src]="mainImageUrl" [alt]="product.alt" />
+    </div>
+    <div class="product-detail__subImage">
+      <img *ngFor="let subImage of product.subImages" [src]="subImage" [alt]="product.name" class="sub-image" (click)="updateMainImageUrl(subImage)" />
+    </div>
+    <div class="product-detail__cost">
+      <p><strong>Giá:</strong> {{ product.cost | currency : "VND" }}</p>
+    </div>
+    <div class="product-detail__soldOut">
+      <p><strong>Đã bán:</strong> {{ product.soldOut }}</p>
+    </div>
+    <div class="product-detail__description">
+      <p><strong>Mô tả:</strong> {{ product.description }}</p>
+    </div>
+  </div>
+  <div *ngIf="!product">
+    <p>Sản phẩm không tồn tại.</p>
+  </div>
+  <button >Thêm vào giỏ hàng</button>
+</div>
