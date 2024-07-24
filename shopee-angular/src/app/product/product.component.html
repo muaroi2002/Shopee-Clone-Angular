@@ -4,7 +4,7 @@
       <span> GỢI Ý HÔM NAY</span>
     </div>
     <div class="product-list">
-      <div class="product-item" *ngFor="let product of products">
+      <div class="product-item" *ngFor="let product of products" (click)=" viewProductDetail(product.id)" >
         <div class="product-item__image">
           <img [src]="product.url" alt="product.name" />
         </div>
